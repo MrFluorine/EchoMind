@@ -1,0 +1,4 @@
+llama-cloud-services
+llama-index-core
+llama-index-readers-file
+python-dotenv
