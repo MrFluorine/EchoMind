@@ -137,6 +137,10 @@ async def create_vectorstore(
         s3_text_url = save_pickle_and_upload(texts, text_file, s3_texts_key)
         s3_meta_url = save_pickle_and_upload(metadatas, meta_file, s3_meta_key)
 
+        os.remove(index_file)
+        os.remove(text_file)
+        os.remove(meta_file)
+
         os.remove(temp_path)
 
         return {
