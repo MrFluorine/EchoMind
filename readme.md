@@ -15,6 +15,7 @@ Built with **FastAPI**, **Streamlit**, **Gemini**, and **FAISS**.
 - ☁️ S3 storage for document and vector persistence
 - 🔁 Upload new docs anytime — chat resets & vector store refreshes
 - 🧰 Built with FastAPI + Streamlit = clean backend + beautiful frontend
+- 🤖 RAG (Retrieval-Augmented Generation): Combines document context with Gemini for precise, context-aware answers
 
 ---
 
@@ -30,7 +31,7 @@ Built with **FastAPI**, **Streamlit**, **Gemini**, and **FAISS**.
 |---------------|-------------------------------------|
 | Frontend      | `Streamlit`                        |
 | API Backend   | `FastAPI`                          |
-| Chat Engine   | `Gemini Pro (Google GenAI)`        |
+| Chat Engine   | `Gemini (Google GenAI)`        |
 | Embeddings    | `sentence-transformers/all-MiniLM` |
 | Vector DB     | `FAISS`                            |
 | File Storage  | `Amazon S3`                        |
@@ -119,7 +120,6 @@ streamlit run echomind.py
 
 ## ✨ Coming Soon
 
-- ✅ RAG + Gemini response fusion
 - 🧑‍💻 Multi-user chat history storage
 - 📊 Document analytics (topics, summaries)
 - 🔒 Authentication with JWT or OAuth
