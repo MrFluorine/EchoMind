@@ -1,5 +1,23 @@
 streamlit>=1.32.0
-llama-index>=0.10.0
-llama-cloud-services>=0.1.0
 google-generativeai>=0.3.0
 python-dotenv>=1.0.0
+# FastAPI & Uvicorn
+fastapi
+uvicorn
+
+# LlamaIndex + Llama Cloud Parser
+llama-index
+llama-cloud-services
+
+# Sentence Transformers (for embeddings)
+sentence-transformers
+
+# FAISS for vector storage
+faiss-cpu  # OR faiss-gpu if you have GPU
+
+# AWS SDK
+boto3
+
+# Utilities
+nest_asyncio
+python-multipart  # required for File upload in FastAPI
