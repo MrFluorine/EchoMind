@@ -21,7 +21,7 @@ Built with **FastAPI**, **Streamlit**, **Gemini**, and **FAISS**.
 
 ## 🖼️ Demo Preview
 
-![echomind_ui](https://github.com/MrFluorine/EchoMind/assets/demo-preview.png)
+![echomind_ui](https://github.com/MrFluorine/EchoMind/blob/main/assets/demo-preview.png)
 
 ---
 
