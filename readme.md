@@ -62,6 +62,7 @@ AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret
 AWS_DEFAULT_REGION=your_region
 GEMINI_API_KEY=your_gemini_api_key
+LLAMA_API_KEY=your_llama_index_key
 ```
 
 ---
