@@ -11,6 +11,7 @@ Built with **FastAPI**, **Streamlit**, **Gemini**, and **FAISS**.
 - 📄 Upload any `.pdf`, `.txt`, or `.docx`
 - 🔍 Smart query classification: retrieval or general chat?
 - 🧠 Gemini-powered conversation (remembers your chat!)
+- 🦙 LlamaIndex for intelligent document parsing and extraction
 - 🗃️ FAISS + Sentence Transformers for fast semantic search
 - ☁️ S3 storage for document and vector persistence
 - 🔁 Upload new docs anytime — chat resets & vector store refreshes
@@ -32,7 +33,7 @@ Built with **FastAPI**, **Streamlit**, **Gemini**, and **FAISS**.
 | Frontend      | `Streamlit`                        |
 | API Backend   | `FastAPI`                          |
 | Chat Engine   | `Gemini (Google GenAI)`        |
-| Embeddings    | `sentence-transformers/all-MiniLM` |
+| Embeddings    | `sentence-transformers/all-MiniLM + LlamaIndex` |
 | Vector DB     | `FAISS`                            |
 | File Storage  | `Amazon S3`                        |
 
@@ -83,7 +84,7 @@ streamlit run echomind.py
 
 ## 💬 How It Works
 
-1. **Enter your user ID**
+1. **Enter your user ID** and **upload a document (parsed via LlamaIndex)**
 2. **Upload a document**
 3. Ask anything like:
    - “What’s the architect’s name?”
