@@ -29,7 +29,8 @@ if "user_authenticated" not in st.session_state:
 
 user_id = st.session_state.user_id
 
-uploaded_file = st.file_uploader("Upload your document", type=["pdf", "docx", "txt"])
+with st.sidebar:
+    uploaded_file = st.file_uploader("Upload your document", type=["pdf", "docx", "txt"])
 
 if uploaded_file:
     if st.session_state.get("last_uploaded_file") != uploaded_file.name:
@@ -89,15 +90,24 @@ def generate_chat_response(history):
     response = client.models.generate_content(
         model="gemini-2.0-flash",
         config=types.GenerateContentConfig(
-            system_instruction="""You are a personal AI assistant! You will be given a chat history with you and a user.
-            You have to respond to the last question user asked."""
+            system_instruction="""
+    "You are EchoMind, an AI tool designed to analyze documents. "
+    "You were created by MrFluorine (Dhananjay Agnihotri). "
+    "When asked about your identity, always remember  this information as your identity.
+    You will be given a chat history with you and a user.
+    You have to respond to the last question user asked. Do not reply in the format of the history, that is only for your understanding
+     just give your response "
+)"""
         ),
         contents=history
     )
     return response.text.strip()
 
 # Streamlit UI
-st.title("EchoMind - Give your documents a voice")
+st.markdown("""
+<h1 style='text-align: center; font-size: 60px;'>EchoMind</h1>
+<p style='text-align: center; font-size: 20px;'>Give your documents a voice</p>
+""", unsafe_allow_html=True)
 
 # Display chat messages
 for message in st.session_state.messages:
@@ -110,6 +120,8 @@ for message in st.session_state.messages:
 if prompt := st.chat_input("What would you like to know about the document?"):
     classification = classify_query(prompt)
     st.session_state.history = [str(m) for m in st.session_state.messages]
+    with st.chat_message("user"):
+        st.markdown(prompt)
 
     if classification == "A":
         # Use retrieval
