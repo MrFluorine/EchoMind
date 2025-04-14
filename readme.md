@@ -49,7 +49,7 @@ Built with **FastAPI**, **Streamlit**, **Gemini**, and **FAISS**.
 ### 🔍 Clone & Install
 
 ```bash
-git clone https://github.com/MrFluorine/echomind.git
+git clone https://github.com/MrFluorine/EchoMind.git
 cd echomind
 pip install -r requirements.txt
 ```
