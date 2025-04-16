@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Jura', sans-serif; /* Changed to Jura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rectangle-8 {
+  border-radius: 0px;
+  width: 800;
+  height: 50px;
+  position: absolute;
+  left: 400px;
+  top: 35px;
+  overflow: visible;
+}
+
+.rectangle-9{
+    background: #000000;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    top: 39px;
+    left: 420px;
+  }
+.rectangle-13 {
+    background: #000000;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    top: 39px;
+    left: 580px;
+  }
+.rectangle-14{
+    background: #000000;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    top: 39px;
+    left: 730px;
+  }
+.rectangle-15{
+    background: #000000;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    top: 39px;
+    left: 880px;
+  }
+
+.about{
+    color: #ffffff;
+    font-family: "Jura-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 48px;
+    left: 900px;
+    
+  }
+.chat{
+    color: #ffffff;
+    font-family: "Jura-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 48px;
+    left: 443px;
+    
+  }
+.history{
+    color: #ffffff;
+    font-family: "Jura-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 48px;
+    left: 746px;
+    
+  }
+.profile {
+    color: #ffffff;
+    font-family: "Jura-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 48px;
+    left: 597px;
+    
+  }
+
+
+.group-1 {
+  width: 79px;
+  height: 34px;
+  position: static;
+}
+
+.rectangle-6 {
+  background: #d9d9d9;
+  border-radius: 90px;
+  border: 2px solid #24e558;
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  left: 1180px;
+  top: 34px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rectangle-7 {
+  background: #000000;
+  border-radius: 90px;
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 1181px;
+  top: 36px;
+}
+.screenshot-2025-04-15-at-1-09-10-pm-1 {
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  object-fit: cover;
+  aspect-ratio: 419 / 108;
+}
+.welcome-den {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Jura-Regular", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  position: absolute;
+  left: 550px;
+  top: 300px;
+}
+.rectangle-16 {
+  background: #24e558;
+  border-radius: 90px;
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  left: 670px;
+  top: 400px;
+}
+.new-chat {
+  color: #000000;
+  text-align: left;
+  font-family: "Jura-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 718px;
+  top: 410px;
+}
+/* Toggle Switch Styles */
+.theme-toggle {
+    position: absolute;
+    top: 45px;
+    left: 1030px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+    border: 2px solid #76ff96;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 32px;
+    left: 0px;
+    bottom: -1px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: black;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+    background-color: white;
+}
+
+/* Light and Dark Modes */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Optional: input and button tweaks for light/dark */
+body.light-mode input,
+body.light-mode button {
+    color: black;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    color: white;
+}
+

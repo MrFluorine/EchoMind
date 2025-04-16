@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Jura', sans-serif; /* Changed to Jura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.login-container {
+    text-align: center;
+    position: relative;
+    top: -40px; /* pushes everything slightly up */
+}
+  
+h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px; /* space below 'Echomind' */
+}
+  
+p {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 40px; /* space between question and input */
+}
+  
+label {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+  
+input[type="text"] {
+    padding: 12px;
+    width: 240px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #d3d3d3;
+    margin-bottom: 30px;
+}
+  
+button {
+    padding: 8px 24px;
+    font-size: 14px;
+    color: white;
+    background-color: #00ff55;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #00cc44;
+}
+
+/* Toggle Switch Styles */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+    border: 2px solid #76ff96;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 32px;
+    left: 0px;
+    bottom: -1px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: black;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+    background-color: white;
+}
+
+/* Light and Dark Modes */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Optional: input and button tweaks for light/dark */
+body.light-mode input,
+body.light-mode button {
+    color: black;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    color: white;
+}

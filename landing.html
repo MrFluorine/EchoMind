@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/landing.css" />
+</head>
+<body>
+    <img class="rectangle-8" src="assets/Rectangle 8.svg" />
+    <div class="rectangle-14"></div>
+    <div class="rectangle-9"></div>
+    <div class="rectangle-15"></div>
+    <div class="rectangle-13"></div>
+    <div class="chat">Chat</div>
+    <div class="history">History</div>
+    <div class="profile">Profile</div>
+    <div class="about">About</div>
+    <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitcher" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    <img
+      class="screenshot-2025-04-15-at-1-09-10-pm-1"
+      src="assets/logo_dark.png"
+      style="width: 210px; height: 54px; top: 34px; left: 21px;"
+    />
+    <div class="welcome-den">Welcome, <span id="user-name">Den</span>!</div>
+    <div class="rectangle-16" ></div>
+    <div class="new-chat">New Chat</div>
+  </div>
+
+  <script src="js/script.js">
+    const username = localStorage.getItem("user_id") || "Guest";
+    document.getElementById("user-name").textContent = username;
+  </script>
+</body>
+</html>
